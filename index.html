@@ -19,8 +19,12 @@
     <link rel="apple-touch-icon" href="img/ACMImg.png" />
 </head>
 
-<body class="impress-not-supported">
 
+<body class="impress-not-supported">
+    <a href="BackgroundSound.mp3" id="song" target="_blank"></a>
+    <!-- <audio autoplay loop>
+        <source src="Unboxing.mp3" type="audio/mpeg">
+     </audio> -->
     <div class="fallback-message">
         <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a
             simplified version of this presentation.</p>
@@ -29,9 +33,12 @@
 
     <div id="impress" data-autoplay="7">
         <div id="">
+                <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10" data-autoplay="10">
+                    </div>
+
             <div id="step1" class="step" data-x="-2500" data-y="-500" data-z="1050"
                 data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o"
-                data-goto-next-list="#step4 #step3 #step2 #step5 overview" data-scale="3" data-autoplay="300">
+                data-goto-next-list="#step4 #step3 #step2 #step5 overview" data-scale="3" data-autoplay="10">
 
                 <center><img src="img/ACMLogo.jpg" style="width:600px; height:auto;">
                 </center>
@@ -39,7 +46,7 @@
 
             <div id="step2" class="step" data-x="-1450" data-y="-500" data-z="0" data-rotate-y="90"
                 data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o"
-                data-goto-next-list="#step4 #step6 #step3 #step1 overview" data-scale="3" data-autoplay="300">
+                data-goto-next-list="#step4 #step6 #step3 #step1 overview" data-scale="3" data-autoplay="10">
                 <h1>About ACM</h1>
                 <br>
                 <p align="justify" style="font-size:30px;">The Association for Computing Machinery (ACM) was founded
@@ -52,7 +59,7 @@
 
             <div id="step3" class="step" data-x="-2500" data-y="550" data-z="0" data-rotate-x="-90" data-rotate-z="90"
                 data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o"
-                data-goto-next-list="step-2 step-5 #step4 #step2 overview" data-scale="3" data-autoplay="300">
+                data-goto-next-list="step-2 step-5 #step4 #step2 overview" data-scale="3" data-autoplay="10">
                 <br>
                 <p align="justify" style="font-size:30px;">It is an umbrella organization for academic and
                     scholarly interests in computer science. Its motto is <b>"Advancing Computing as a Science &
@@ -63,7 +70,7 @@
 
             <div id="step4" class="step" data-x="-2500" data-y="-1050" data-z="0" data-rotate-x="90" data-rotate-z="-90"
                 data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o"
-                data-goto-next-list="step-5 step-2 #step5 #step3 overview" data-scale="3" data-autoplay="300">
+                data-goto-next-list="step-5 step-2 #step5 #step3 overview" data-scale="3" data-autoplay="10">
                 <p style="font-size:30px;"> <b>ACM-ICPC</b><br> (Association for Computing Machinery - International
                     Collegiate Programming Contest)</p>
                 <center><img src="img/ACMICPC.png" style="width:500px; height:auto;"></center>
@@ -74,7 +81,7 @@
 
             <div id="step5" class="step" data-x="-3550" data-y="-500" data-z="0" data-rotate-y="-90"
                 data-rotate-z="-180" data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o"
-                data-goto-next-list="step-3 step-4 #step6 #step4 overview" data-scale="3" data-autoplay="300">
+                data-goto-next-list="step-3 step-4 #step6 #step4 overview" data-scale="3" data-autoplay="10">
                 <center><img src="img/Compete.jpg" style="width:500px; height:auto;"></center>
                 <p align="justify" style="font-size:30px;">The ACM ICPC is considered as the <b>"Olympics of Programming
                         Competitions"</b>.
@@ -84,7 +91,7 @@
 
             <div id="step6" class="step" data-x="-2500" data-y="-500" data-z="-1050" data-rotate-y="-180"
                 data-rotate-z="-180" data-goto-key-list="ArrowUp ArrowDown ArrowRight ArrowLeft o"
-                data-goto-next-list="step-3 step-4 #step5 #step1 overview" data-scale="3" data-autoplay="300">
+                data-goto-next-list="step-3 step-4 #step5 #step1 overview" data-scale="3" data-autoplay="10">
                 <p style="font-size:30px;"><b>The chess match between Garry Kasparov and the IBM Deep Blue computer.</b>
                 </p>
                 <br>
@@ -93,39 +100,107 @@
             </div>
         </div>
 
-        <div id="" class="step" data-x="2750" data-y="1800" data-scale="4" data-autoplay="300">
+        <div id="" class="step" data-x="2750" data-y="1800" data-scale="4" data-autoplay="10">
             <img src="img/ACMImg.png">
         </div>
 
         <div id="" class="step" data-x="1000" data-y="1800" data-z="0" data-rotate="-90" data-scale="3"
-            data-autoplay="300">
+            data-autoplay="10">
             <p>Past Events under <b>ACM IET CHAPTER</b></p>
         </div>
 
-        <div class="step slide" data-rel-x="1100" data-rel-y="-2200" data-rotate="-15" data-scale="2">
+        <div class="step slide" data-rel-x="1100" data-rel-y="-2200" data-rotate="-15" data-scale="2" data-autoplay="10">
             <h1>Motivational session by co-founder & COO of wittyfeed <br>Mr Parveen Singhal</h1>
             <br>
             <center><img src="img/MotEvent.webp" alt="" style="width:600px; height:auto;"></center>
 
         </div>
 
-        <div class="step slide" data-rel-x="2400" data-rel-y="-200" data-rotate="0" data-scale="2">
+        <div class="step slide" data-rel-x="2400" data-rel-y="-200" data-rotate="0" data-scale="2" data-autoplay="10">
             <br>
             <center><img src="img/WSonPS.webp" alt="" style="width:400px; height:auto;"></center>
         </div>
 
-        <div class="step slide" data-rel-x="2400" data-rel-y="600" data-rotate="30" data-scale="2">
+        <div class="step slide" data-rel-x="2400" data-rel-y="600" data-rotate="30" data-scale="2" data-autoplay="10">
             <br>
             <center><img src="img/Inves.webp" alt="" style="width:700px; height:auto;"></center>
         </div>
 
-        <div class="step slide" data-rel-x="2400" data-rel-y="1200" data-rotate="60" data-scale="2">
+        <div class="step slide" data-rel-x="2400" data-rel-y="1200" data-rotate="60" data-scale="2" data-autoplay="10">
             <br>
             <center><img src="img/PhotoM.webp" alt="" style="width:400px; height:auto;"></center>
         </div>
 
-        <div id="overview" class="step" data-x="3000" data-y="1500" data-z="0" data-scale="10" data-autoplay="300">
+        <div id="" class="step" data-x="6500" data-y="1300" data-z="0" data-rotate="30" data-scale="3"
+            data-autoplay="10">
+            <p>Meet the <b>Star Performers</b> of our campus</p>
         </div>
+
+        <div id="" class="step" data-x="6500" data-y="1900" data-z="0" data-rotate="-10" data-scale="2"
+            data-autoplay="10">
+            <p>Smart India Hackathon Winner</p>
+        </div>
+
+        <div id="" class="step" data-x="6500" data-y="2700" data-z="0" data-rotate="-10" data-scale="3"
+            data-autoplay="10">
+            <img src="img/SIH2.jpg" alt="" style="width:1000px; height:auto;">
+        </div>
+        
+        
+
+        <div class="step slide" data-rel-x="0" data-rel-y="1500" data-rotate="-15" data-scale="2" data-autoplay="10">
+            <center>
+                <h1><b>Some top coders from our campus</b></h1>
+            </center>
+            <br>
+            <center><img src="img/Codechef.png" alt="" style="width:700px; height:auto;">
+                
+            </center>
+
+        </div>
+
+        <div class="step slide" data-rel-x="-7000" data-rel-y="-2500" data-rotate="-15" data-scale="2" data-autoplay="10">
+            <center>
+                <h1><b>Faculty Sponsor of ACM IET Chapter</b></h1>
+            </center>
+            <br>
+            <center><img src="img/CPSir.jpg" alt="" style="width:600px; height:auto;">
+                <br>
+                <br>
+                <h3>Assistant Professor - Department Of Information Technology</h3>
+            </center>
+
+        </div>
+
+        <div class="step slide" data-rel-x="-2000" data-rel-y="1000" data-rotate="15" data-scale="2" data-autoplay="10">
+            <center>
+                <h1><b>Meet Our Team</b></h1>
+            </center>
+            <br>
+            <br>
+            <br>
+            <h4 style="font-size:25px;">Darshita Patil [Chairman] {3rd Yr ENTC A}</h4>
+
+            <h4 style="font-size:25px;">Dhananjay Purohit [Vice-Chairman] {2nd Yr IT B}</h4>
+
+            <h4 style="font-size:25px;">Hrithik Jain [General Secretary] {2nd Yr IT A}</h4>
+
+            <h4 style="font-size:25px;">Ayush Dua [Event Head] {3rd Yr CS B}</h4>
+
+            <h4 style="font-size:25px;">Aaditya Udit Shrivastava [Technical Head] {3rd Yr IT A}</h4>
+
+            <h4 style="font-size:25px;">Akshita Ranawat [Marketing Head] {3rd Yr EI}</h4>
+
+            <h4 style="font-size:25px;">Prakhar Chelawat [Web Master] {2nd Yr CS A}</h4>
+
+            <h4 style="font-size:25px;">Simran Khullar [Treasurer] {3rd Yr ENTC A}</h4>
+
+            <h4 style="font-size:25px;">Yogesh Gupta [Membership Chairman] {2nd Yr IT A}</h4>
+        </div>
+
+
+
+       
 
     </div>
 
@@ -144,5 +219,10 @@
     <script>impress().init();</script>
 
 </body>
-
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('song').click();
+    });
+   
+    </script>
 </html>
